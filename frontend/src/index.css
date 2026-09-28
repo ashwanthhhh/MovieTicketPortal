@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* BACKGROUNDS */
+  --bg-primary: #050505; /* Near Black */
+  --bg-secondary: #0F0F0F; /* Slighly lighter black for cards */
+  --bg-input: #1A1A1A;
+
+  /* ACCENTS */
+  --accent-primary: #E50914; /* Cinematic Red (Netflix style) */
+  --accent-secondary: #00D4FF; /* Keeping Teal for selection highlights */
+  --accent-gradient: linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%);
+  --accent-red-soft: rgba(229, 9, 20, 0.1);
+
+  /* TEXT */
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0A0A0;
+  --text-muted: #555555;
+
+  /* STATUS */
+  --status-success: #00D4FF; /* Using Teal for success to match screenshot selected state */
+  --status-error: #E50914;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Common Utility Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.shadow-premium {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.perforated-edge {
+  position: relative;
+}
+
+.perforated-edge::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-image: radial-gradient(circle, transparent 70%, var(--bg-primary) 70%);
+  background-size: 20px 20px;
+  background-position: center;
+}
