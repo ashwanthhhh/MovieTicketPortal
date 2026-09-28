@@ -1,55 +1,80 @@
-# 🎬 Movie Ticket Portal – Frontend
+# 🎬 Movie Ticket Portal
 
-This is the **frontend** part of the **Movie Ticket Portal with Gamification & Ticket Transfer** project.  
-Built using **React.js**, it provides an interactive user interface for movie browsing, ticket booking, voting, rewards, and ticket transfer.
+A full-stack movie and entertainment booking platform built with React.js, Node.js, and Express.js. The application provides users with a seamless experience for discovering movies, booking tickets, selecting seats, exploring events and sports, transferring tickets, participating in voting, and earning rewards through gamification.
 
----
+## 📌 Project Overview
 
-## 🛠️ Technologies Used
+Movie Ticket Portal is designed as a centralized entertainment platform where users can discover and book different types of entertainment experiences through a single application.
 
-- **React.js** – UI development
-- **React Router DOM** – Page navigation
-- **Axios** – API communication with backend
-- **CSS** – Styling and UI effects
+The system includes a modern React-based frontend and a Node.js/Express backend with RESTful APIs for authentication, movies, theatres, bookings, ticket transfers, voting, gamification, notifications, and AI-powered features.
 
----
+## ✨ Key Features
 
-## 📂 Folder Structure
+- 🎬 Browse and explore movies
+- 🎟️ Movie ticket booking
+- 💺 Interactive seat selection
+- 🏢 Theatre browsing and management
+- 🎭 Events and plays booking
+- 🏏 Sports event booking
+- 🔄 Ticket transfer functionality
+- 🗳️ Movie and entertainment voting
+- 🎮 Gamification and reward points
+- 🤖 AI-powered chat assistance
+- 👤 User registration and authentication
+- 🔐 Protected routes and authentication middleware
+- 👨‍💼 Admin dashboard
+- 🔔 Notifications
+- 💳 Payment interface
+- 👤 User profile management
 
-frontend/
+## 🛠️ Technology Stack
+
+### Frontend
+
+- React.js
+- React Router
+- Axios
+- JavaScript
+- HTML5
+- CSS3
+
+### Backend
+
+- Node.js
+- Express.js
+- RESTful APIs
+- Authentication Middleware
+- JWT-based Authentication
+
+### Development Tools
+
+- Git
+- GitHub
+- VS Code
+- npm
+
+## 📂 Project Structure
+
+```text
+MovieTicketPortal/
 │
-├── public/
-│   └── index.html
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── services/
+│       ├── context/
+│       ├── api/
+│       └── utils/
 │
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── MovieCard.jsx
-│   │   ├── SeatSelector.jsx
-│   │   ├── Badge.jsx
-│   │   └── PaymentForm.jsx
-│   │
-│   ├── pages/
-│   │   ├── Login.jsx
-│   │   ├── Register.jsx
-│   │   ├── Dashboard.jsx
-│   │   ├── Movies.jsx
-│   │   ├── Booking.jsx
-│   │   ├── Profile.jsx
-│   │   ├── Transfer.jsx
-│   │   └── AdminDashboard.jsx
-│   │
-│   ├── services/
-│   │   ├── authService.js
-│   │   ├── movieService.js
-│   │   ├── bookingService.js
-│   │   └── voteService.js
-│   │
-│   ├── context/
-│   │   └── AuthContext.jsx
-│   │
-│   ├── App.js
-│   └── index.js
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
 │
-├── package.json
+├── .gitignore
 └── README.md
